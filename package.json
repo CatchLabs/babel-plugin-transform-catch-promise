@@ -1,0 +1,21 @@
+{
+  "name": "babel-plugin-transform-catch-promise",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zeno Zeng",
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.3.13"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
