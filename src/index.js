@@ -1,11 +1,21 @@
+import * as babylon from "babylon";
+
 export default function ({ types: t }) {
     return {
+
         visitor: {
             Program(path, file) {
-                path.unshiftContainer('body', t.expressionStatement(t.stringLiteral('use catch-promise;')));
-                //path.unshiftContainer('body', t.variableDeclaration('var', [
-                //    t.variableDeclarator(t.identifier('CatchPromise'),
-                //]));
+                // Inject `var CatchPromise = require('catch-promise');`
+                var catchPromiseDeclaration = t.variableDeclaration('var', [
+                    t.variableDeclarator(
+                        t.identifier('CatchPromise'),
+                        t.callExpression(
+                            t.identifier('require'),
+                            [t.stringLiteral('catch-promise')]
+                        )
+                    )
+                ]);
+                path.unshiftContainer('body', catchPromiseDeclaration);
             }
             //MemberExpression(path) {
             //    if (path.get('object').matchesPattern('Promise')) {
