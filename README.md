@@ -1,8 +1,8 @@
 # babel-plugin-transform-catch-promise
 
-A babel plugin that:
+This is a babel plugin that:
 
-- Append `var CatchPromise = require('catch-promise');` at beginning of file
+- Prepend `var CatchPromise = require('catch-promise');` to the file
 
 - Replace all `Promise` identifiers with `CatchPromise`
 
