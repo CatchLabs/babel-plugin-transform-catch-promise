@@ -6,10 +6,6 @@ This is a babel plugin that:
 
 - Replace all `Promise` identifiers with `CatchPromise`
 
-## Status
-
-WIP
-
 ## Dev
 
 ```
