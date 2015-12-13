@@ -2,7 +2,7 @@
 
 This babel plugin that:
 
-- Prepend `var CatchPromise = require('catch-promise');` to each `.js` file
+- Prepend `var CatchPromise = require('catch-promise');` to the file
 
 - Replace all `Promise` identifiers with `CatchPromise`
 
