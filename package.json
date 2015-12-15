@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-catch-promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -10,8 +10,7 @@
   "author": "Zeno Zeng",
   "license": "MIT",
   "dependencies": {
-    "babel-runtime": "^6.3.13",
-    "babylon": "^6.3.15"
+    "babel-runtime": "^6.3.13"
   },
   "keywords": [
     "babel-plugin"
